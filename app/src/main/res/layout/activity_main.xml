@@ -21,7 +21,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/barrier3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" tools:targetApi="o"/>
 
     <EditText
         android:id="@+id/FileSizeInput"
@@ -35,7 +35,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/NetworkSpeedInput"
         app:layout_constraintStart_toStartOf="@+id/NetworkSpeedInput"
-        app:layout_constraintTop_toBottomOf="@+id/NetworkSpeedInput" />
+        app:layout_constraintTop_toBottomOf="@+id/NetworkSpeedInput" tools:targetApi="o"/>
 
     <TextView
         android:id="@+id/FileSize"
@@ -62,8 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="right"
-        app:constraint_referenced_ids="FileSize,NetworkSpeed"
-        tools:layout_editor_absoluteX="103dp" />
+        app:constraint_referenced_ids="FileSize,NetworkSpeed"/>
 
     <TextView
         android:id="@+id/Result"
