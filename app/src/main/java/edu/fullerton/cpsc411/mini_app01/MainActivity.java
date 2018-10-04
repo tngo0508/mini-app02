@@ -46,9 +46,14 @@ public class MainActivity extends AppCompatActivity implements TextWatcher{
             networkSpeed = 100.0;
             fileSize = 100.0;
         }
-        result = cal(networkSpeed, fileSize);
-        String time = toOneDec(result) + " seconds";
-        output.setText(time);
+
+        if (fileSize == 0) {
+            output.setText(R.string.invalid_input);
+        } else {
+            result = cal(networkSpeed, fileSize);
+            String time = toOneDec(result) + " seconds";
+            output.setText(time);
+        }
     }
 
     @Override

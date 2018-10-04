@@ -4,6 +4,6 @@
     <string name="file_size_input">100 MiB</string>
     <string name="network_speed">Network Speed</string>
     <string name="file_size">File Size</string>
-    <string name="mini_app">Mini-App01</string>
     <string name="result">8.4 seconds</string>
+    <string name="invalid_input">File size cannot be 0 MiB</string>
 </resources>
