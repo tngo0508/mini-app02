@@ -1,4 +1,4 @@
-package edu.fullerton.cpsc411.mini_app01;
+package edu.fullerton.cpsc411.mini_app02;
 
 import org.junit.Test;
 

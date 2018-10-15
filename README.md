@@ -1,21 +1,14 @@
 # CPSC 411- Mobile Device Application Development
-# Fall 2018 - Mini-App 1, due October 11
+# Fall 2018 - Mini-App 2, due October 18
 ## Introduction
-You’ve switched to a new ISP who advertises speeds up to 100Mbps. Eager to take the network for a spin, you try to download a 100 MiB file. It takes over 10 seconds! Should you ask for your money back?
-Regrettably, no. Network engineers measure speeds in bits per second (bps), and use decimal prefixes (1 Mbps = 1,000 Kbps). Computer scientists measure file sizes in bytes and use binary prefixes (1 MiB = 1,024 KiB). The theoretical maximum transfer time for a 100MiB file over a 100Mbps link is a bit more 8 seconds.
-To avoid miscommunication in the future, we’re going to make sure that there’s an app for that.
-## User Interface
-    + The app should have one activity.
-    + The activity should contain two fields and at least three labels.
-    + Each field should be labeled clearly, and include a hint for what the user should enter.
-    + A larger label below the two fields should be used to show the computed result.
-## Operation
-    + The fields should allow the user to enter numeric values for network speed in Mbps and file size in MiB.
-    + he larger label should show the computed transfer time in seconds.
-    + As values in either field are changed, the transfer time should be recalculated.
-## Specifications
-    + The app should be written in Java
-    + The app should accept integer values for network speed and file size
-    + The fields should allow the user to enter only digits
-    + The transfer time should be displayed to one decimal place (e.g. 8.4 seconds)
-    + 1 B = 8 b; 1 MiB = 220 B; 1 Mbps = 106 bps
+Convert your code for [Mini-App 1](https://github.com/tngo0508/mini-app01) to Kotlin.
+Begin by using Code > Convert Java File to Kotlin File on each Java class in your project.
+## Kotlin Fixes
+ + Convert any var declarations to val
+ + Eliminate nullable types (e.g. String?)
+ + When possible, take advantage of type inference by eliminating type declarations
+ + A larger label below the two fields should be used to show the computed result.
+## Kotlin Android Features
+ + Import your layout from kotlinx.android.synthetic… and remove calls to findViewById()
+ + Use an [object](https://kotlinlang.org/docs/reference/object-declarations.html) to implement the TextWatcher interface
+ + Move some of the code from your activity into an appropriate TextView or EditText extension function
