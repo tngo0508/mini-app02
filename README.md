@@ -12,3 +12,5 @@ Begin by using Code > Convert Java File to Kotlin File on each Java class in you
  + Import your layout from kotlinx.android.synthetic… and remove calls to findViewById()
  + Use an [object](https://kotlinlang.org/docs/reference/object-declarations.html) to implement the TextWatcher interface
  + Move some of the code from your activity into an appropriate TextView or EditText extension function
+## Acknowledgement
+-   **Professor Kenytt Avery** - _kavery@fullerton.edu_ - California State University, Fullerton
